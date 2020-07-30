@@ -9,23 +9,17 @@
 
         <h1 class="text-center">
             <p>{{userData.name}}</p>
-            <br>
             <a href="{{userData.html_url}}">
                 {{userData.login}}                        
             </a>
-
         </h1>
     <div ng-repeat="repo in repoData">
-
             <h1>{{repo.name}}</h1>
             <p>{{repo.description}}</p>
-            <h4>Derniere mise a jour:</h4>
-            <p>{{repo.updated_at}}</p>
             <h4>Creation:</h4>
             <p>{{repo.created_at}}</p>
+            <h4>Derniere mise a jour:</h4>
+            <p>{{repo.updated_at}}</p>
     </div>
-
-
-
     </body>
 </html>
